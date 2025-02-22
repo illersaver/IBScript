@@ -1,0 +1,23 @@
+### Function 1;
+func: testFunc3 2;
+    variable: var3 = I_Was_Implemented!;
+    print: var3;
+
+### Function 2;
+func: testFunc2 3;
+    variable: var2 = I_Am_A_Function!;
+    print: var2;
+
+    ### Calling the testFunc3;
+    call: testFunc3;
+
+### Function 3;
+func: testFunc1 3;
+    variable: var1 = Hello_world!;
+    print: var1;
+
+    ### Calling the testFunc2;
+    call: testFunc2;
+
+### Calling the testFunc1;
+call: testFunc1;

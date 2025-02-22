@@ -1,0 +1,26 @@
+### Variables!;
+variable: a = 5;
+variable: b = 10;
+variable: c = 15;
+variable: d = 20;
+
+variable: ans = 0;
+
+variable: text = Answer:_;
+variable: helloWorld = Hello_World!;
+
+### This thing can do math!;
+a + b ans;       ### 5 + 10 = 15;
+ans * c ans;     ### 15 * 15 = 225;
+ans - d ans;     ### 225 - 20 = 205;
+ans / d ans;     ### 205 / 20 = 10.25;
+text .. ans ans; ### Answer: + 50 = Answer:50;
+
+### This little thingy prints "Hello_World!" and "50";
+
+func: testFunc 1;
+    print: helloWorld;
+
+call: testFunc;
+
+print: ans;

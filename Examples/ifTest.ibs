@@ -1,0 +1,16 @@
+### Variables (In this laguage instead of true/false we use 1/0);
+variable: false = 0;
+variable: true = 1;
+
+### Activated when true;
+func: onTrue 2;
+    variable: var2 = I_Am_A_Function!;
+    print: var2;
+
+### Activated when false;
+func: onFalse 2;
+    variable: var1 = Hello_world!;
+    print: var1;
+
+### if statement;
+if: true onTrue onFalse;

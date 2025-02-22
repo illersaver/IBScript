@@ -1,0 +1,30 @@
+### Constants;
+variable: ten = 10;
+variable: fifty = 50;
+
+### Bools;
+variable: bool = 0;
+variable: bool1 = 0;
+
+### Persistent value used by the recursion;
+variable: value = 0;
+
+### We need to make it a function;
+func: stopFunc 1;
+    stop:;
+
+### recursion itself;
+func: recursion 5;
+    ### Adding 10 to value every step;
+    value + ten value;
+    ### Printing out the results;
+    print: value;
+    ### binary operation;
+    value > fifty bool;
+    ### if bool is true we stop;
+    if: bool stopFunc;
+    ### call recursion again;
+    call: recursion;
+
+### Starting the recursion;
+call: recursion;
