@@ -1,0 +1,65 @@
+### This shit is cursed bruh;
+
+### Input;
+variable: a = 2; 
+variable: b = -6; 
+variable: c = 3; 
+
+### Variables;
+variable: d = 0; 
+variable: buffer = 0; 
+variable: dBiggerThanZero = 0;
+
+### Constants;
+variable: textD = Discriminant:;
+variable: textX1 = X1:;
+variable: textX2 = X2:;
+
+variable: four = 4;
+variable: two = 2;
+variable: zero = 0;
+variable: minusOne = -1;
+
+### Functions;
+func: stopFunc 1;
+    stop:;
+
+func: calculateBoth 2;
+    call: calculateX1;
+    call: calculateX2;
+
+func: calculateX1 7;
+    variable: x1 = 0;
+    minusOne * b buffer;
+    buffer + d x1;
+    two * a buffer ;
+    x1 / buffer x1;
+    textX1 .. x1 textX1 ;
+    print: textX1;
+
+func: calculateX2 7;
+    variable: x2 = 0;
+    minusOne * b buffer;
+    buffer - d x2;
+    two * a buffer ;
+    x2 / buffer x2;
+    textX2 .. x2 textX2 ;
+    print: textX2;
+
+### Getting discriminant;
+b * b d;
+four * a buffer ;
+buffer * c buffer ;
+d - buffer d;
+
+### Text;
+textD .. d textD;
+print: textD;
+
+### If the discriminant is 0 we can calculate x;
+d == zero dBiggerThanZero;
+if: dBiggerThanZero calculateX1;
+
+### If the discriminant is bigger than 0 we can calculate x1 and x2;
+d > zero dBiggerThanZero;
+if: dBiggerThanZero calculateBoth;
